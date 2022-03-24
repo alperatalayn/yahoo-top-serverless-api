@@ -1,1 +1,2 @@
-.s*
+.serverless
+node_modules

@@ -177,7 +177,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/top-gainers-losers/production/1647882222780-2022-03-21T17:03:42.780Z/top-gainers-losers.zip"
+                "S3Key": "serverless/top-gainers-losers/production/1648021354068-2022-03-23T07:42:34.068Z/top-gainers-losers.zip"
               },
               "Handler": "server.run",
               "Runtime": "nodejs12.x",
@@ -201,14 +201,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersioncVvgG68cMn2hfENwRrhFQ5zhDm1oIf1NqC0MoB1RLw": {
+          "AppLambdaVersionP7UHfM9lVCy0lKMd1RUQLmtCoqiC95fkluSZKk88MCs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "X74dLhB7+Rpx4dOpOpVgfB6VKF5MpByT4JsH774q/60="
+              "CodeSha256": "fAyir/eg58R7UQI/+l6wLTMAjDUsXyZx3tpisdk7KdA="
             }
           },
           "ApiGatewayRestApi": {
@@ -426,7 +426,7 @@
               "AppLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1647882149114": {
+          "ApiGatewayDeployment1648021033111": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -491,7 +491,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersioncVvgG68cMn2hfENwRrhFQ5zhDm1oIf1NqC0MoB1RLw"
+              "Ref": "AppLambdaVersionP7UHfM9lVCy0lKMd1RUQLmtCoqiC95fkluSZKk88MCs"
             },
             "Export": {
               "Name": "sls-top-gainers-losers-production-AppLambdaFunctionQualifiedArn"
@@ -673,7 +673,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersioncVvgG68cMn2hfENwRrhFQ5zhDm1oIf1NqC0MoB1RLw"
+        "versionLogicalId": "AppLambdaVersionP7UHfM9lVCy0lKMd1RUQLmtCoqiC95fkluSZKk88MCs"
       }
     },
     "configValidationMode": "warn",
@@ -694,7 +694,7 @@
     "artifact": "/home/sirdarwin/api/.serverless/top-gainers-losers.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/top-gainers-losers/production/1647882222780-2022-03-21T17:03:42.780Z",
+    "artifactDirectoryName": "serverless/top-gainers-losers/production/1648021354068-2022-03-23T07:42:34.068Z",
     "artifact": "top-gainers-losers.zip"
   }
 }
